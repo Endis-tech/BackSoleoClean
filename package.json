@@ -2,11 +2,11 @@
   "name": "todo-pwa-api",
   "version": "1.0.0",
   "type": "module",
-  "description": "",
   "scripts": {
     "dev": "nodemon src/server-local.js",
-    "seed:membership": "node seed/membership.seed.js",
-    "start": "node src/server.js"
+    "start": "node src/server-local.js",
+    "vercel-build": "echo 'Building for Vercel...' && npm install",
+    "seed:membership": "node seed/membership.seed.js"
   },
   "engines": {
     "node": "20.x"

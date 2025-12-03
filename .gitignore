@@ -1,7 +1,7 @@
-#dependecias
+# Dependencias
 node_modules/
-#build / coverage / logs
 
+# Build / coverage / logs
 dist/
 build/
 coverage/
@@ -9,10 +9,53 @@ coverage/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
 
-
-# env y credenciales
+# Environment y credenciales
 .env
-serviceAccountKey.json
-.env.*
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.test
+.env.staging
 !.env.example
+
+# Archivos de configuración con credenciales
+serviceAccountKey.json
+firebase-key.json
+*.key
+*.pem
+*.p12
+*.crt
+
+# Firebase
+.firebase/
+.firebaserc
+
+# Vercel
+.vercel/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Uploads temporales
+uploads/
+temp/
+tmp/
+
+# Configuraciones específicas
+config/production.json
+config/development.json
+
+# Archivos de MongoDB
+mongod.lock
+.data/
