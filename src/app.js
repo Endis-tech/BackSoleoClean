@@ -2,7 +2,7 @@
 import express from "express";
 import morgan from "morgan";
 import cors from "cors";
-import taskRoutes from "./routes/task.routes.js";
+
 import authRoutes from "./routes/auth.routes.js";
 import membershipRoutes from "./routes/membership.routes.js";
 import userRoutes from "./routes/user.routes.js";
@@ -57,7 +57,7 @@ app.get("/", (req, res) => {
     message: "API funcionando correctamente",
     version: "1.0.0",
     endpoints: [
-      "/api/tasks",
+
       "/api/auth",
       "/api/memberships",
       "/api/users",
@@ -71,7 +71,7 @@ app.get("/", (req, res) => {
 });
 
 // Rutas API
-app.use("/api/tasks", taskRoutes);
+
 app.use("/api/auth", authRoutes);
 app.use("/api/memberships", membershipRoutes);
 app.use("/api/users", userRoutes);
