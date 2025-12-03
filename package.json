@@ -6,10 +6,10 @@
   "scripts": {
     "dev": "nodemon src/server-local.js",
     "seed:membership": "node seed/membership.seed.js",
-    "start": "node src/server.js"
+    "start": "node src/server-local.js"
   },
   "engines": {
-    "node": ">=20"
+    "node": "20.x"
   },
   "dependencies": {
     "@paypal/checkout-server-sdk": "^1.0.3",
